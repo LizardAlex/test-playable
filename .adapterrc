@@ -1,0 +1,12 @@
+{
+  "buildPlatform": "web-mobile",
+  "orientation": "auto",
+  "injectOptions": {
+    "Unity": {
+      "body": "<script>function onCTAClick(){var clickURL='https://play.google.com/store/apps/details?id=com.LuB.DeliveryConstruct&hl=en';if(/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream){clickURL='https://apps.apple.com/us/app/ride-master-car-builder-game/id6449224139';}mraid.open(clickURL);}window.onload=function(){if(typeof cc!=='undefined'&&typeof mraid!=='undefined'&&cc.game&&cc.game.run){var originalRun=cc.game.run;cc.game.run=function(){var viewChange=(viewable)=>{if(cc.unMute&&viewable){cc.unMute();}else if(cc.mute&&!viewable){cc.mute();}};var sizeChange=()=>{var width=document.documentElement.clientWidth||document.body.clientWidth;var height=document.documentElement.clientHeight||document.body.clientHeight;if(cc.onResize){cc.onResize(width,height);}};var firstViewable=()=>{originalRun.apply(cc.game,arguments);mraid.addEventListener('viewableChange',viewChange);mraid.addEventListener('sizeChange',sizeChange);};var awaitFirstViewable=(viewable)=>{if(viewable){mraid.removeEventListener('viewableChange',awaitFirstViewable);firstViewable();}};var onReady=()=>{if(mraid.isViewable()){firstViewable();}else{mraid.addEventListener('viewableChange',awaitFirstViewable);}};var removeOnReady=()=>{mraid.removeEventListener('ready',removeOnReady);onReady();};if(mraid.getState()==='loading'){mraid.addEventListener('ready',removeOnReady);}else{onReady();}};}}</script>"
+    }
+  },
+  "isZip": true,
+  "enableSplash": false,
+  "exportChannels": ["Unity"]
+}

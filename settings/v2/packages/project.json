@@ -1,0 +1,50 @@
+{
+  "__version__": "1.0.2",
+  "general": {
+    "designResolution": {
+      "fitHeight": true,
+      "width": 720,
+      "height": 720
+    }
+  },
+  "custom_joint_texture_layouts": [],
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "PLAYER"
+      },
+      {
+        "index": 2,
+        "name": "COINS"
+      },
+      {
+        "index": 3,
+        "name": "WOOD"
+      },
+      {
+        "index": 4,
+        "name": "DEADAREA"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 3,
+      "1": 29,
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "defaultMaterial": {
+      "friction": 1,
+      "spinningFriction": 0,
+      "rollingFriction": 0,
+      "restitution": 0
+    },
+    "gravity": {
+      "y": -18
+    },
+    "autoSimulation": true,
+    "maxSubSteps": 1,
+    "fixedTimeStep": 0.0166
+  }
+}
