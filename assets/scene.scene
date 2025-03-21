@@ -5980,7 +5980,7 @@
         "__id__": 272
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 297
@@ -12733,7 +12733,7 @@
       "lightmapSettings",
       "_castShadow"
     ],
-    "value": true
+    "value": false
   },
   {
     "__type__": "cc.TargetInfo",
@@ -12750,7 +12750,7 @@
       "lightmapSettings",
       "_castShadow"
     ],
-    "value": true
+    "value": false
   },
   {
     "__type__": "cc.TargetInfo",
